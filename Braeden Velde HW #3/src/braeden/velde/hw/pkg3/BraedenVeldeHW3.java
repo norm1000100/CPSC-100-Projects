@@ -33,9 +33,66 @@ public class BraedenVeldeHW3 {
         , "Choose 1, 2, 3, 4, or 5 from:" , "(1)18 or more, (2)10-17, (3)8-9, (4)6-7, (5)0-5");
       hours = kbd.nextInt();
             if ( hours == 1 || hours == 2 || hours == 3 || hours == 4 || hours == 5)
-    {if (residence == 1 && hours == 1)
+    {
+        if (residence == 1 && hours == 1)
+    {
+        System.out.println("You should get a " + pig);
         
+    }
         
+    
+                else {
+        if (residence == 1 && hours == 2)
+        {
+        System.out.println("You should get a " + dog);    
+        
+        }
+        
+        else
+        {
+            if (residence == 1 && hours == 3)
+            {
+                System.out.println("You should get a " + snake);
+                
+            }
+            
+                else 
+                {
+                    if (residence == 2 && (hours == 1 || hours == 2 ))
+                        {
+                        System.out.println("You should get a " + cat);
+                        }
+                            else 
+                        {
+                        if (residence == 2 &&(hours == 3 || hours == 4 || hours == 5))
+                        {
+                                System.out.println("You should get a " + hamster );
+                                
+                                }
+                        
+                        
+                        else
+                        {
+                        if (residence == 3 && (hours == 4 || hours == 3 || hours == 2 || hours == 1))
+                        {
+                        System.out.println("You should get a " + fish);
+                        }
+                        else
+                        {
+                            if (residence == 3 && hours == 5)
+                            {
+                                System.out.println("You should get some a " + ant + "farm");
+                            }
+                        {
+                            
+                        }
+                        }
+                        }
+                        }
+                        }
+            }
+        }
+    }
         }
             else 
             {
