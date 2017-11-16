@@ -1,6 +1,17 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package BraedenVelde_HW4;
 
-public class BraedenVelde_HW4_Q2a {
+
+
+/**
+ *
+ * @author velde
+ */
+public class BraedenVelde_HW4_Q2b {
 
     public static void main(String[] args) {
         int Primes = 2;
@@ -19,19 +30,20 @@ public class BraedenVelde_HW4_Q2a {
 
                 }
 
-            } while ((i < 5) && (Primes < Final));
+            } while ((i < 5) && (Primes < Final ));
             System.out.println();
             total = total + i;
             i = 0;
         } while (Primes < Final);
 
-        System.out.printf("%n%s%n%s%d%s%n", "Are all Primes", "There are ", total, " Primes");
+        System.out.printf("%n%s%n%s%d%s%n", "Are all Primes", "There are " , total
+        ," Primes");
     }
 
     public static boolean IsPrime(int Prime) {
 
         int YesPrime = 0;
-        int i = 2;
+        int i = 1;
         if (Prime > 1) {
 
             do {//starts the loop to test for Prime
@@ -45,12 +57,13 @@ public class BraedenVelde_HW4_Q2a {
 
                     ++i;
                 }
-            } while (Prime >= i);
+            } while ((Prime >= (i * i)));
 
-            return YesPrime == 1;
+            return YesPrime <= 1;
         } else {
             return false;
         }
     }
 
 }
+
